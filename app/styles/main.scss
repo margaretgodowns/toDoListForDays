@@ -1,0 +1,63 @@
+
+// Custom Styles
+body {
+  background: #DFDFDF;
+  h1 {
+    font-family: arial;
+    color: #CDCDCD;
+    text-align: center;
+    font-size: 4em;
+  }
+  .container{
+    background: white;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    .taskEnter{
+      display: inline-block;
+      width: 90%;
+      background: #F6F6F6;
+      color: #ABABAB;
+      font-family: arial;
+      font-size: 1.5em;
+      font-weight: lighter;
+      font-style: italic;
+      text-align: center;
+    }
+    .allTasks{
+      text-align: left;
+      font-family: arial;
+      font-size: 1.4em;
+      color: black;
+      height: 250px;
+      li{
+        list-style-type: none;
+      }
+    }
+    .taskStatus{
+      background: #EDEDED;
+      color: #8a7c77;
+      font-size: 1em;
+      text-align: center;
+      li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px;
+        li{
+          list-style-type: none;
+          display: inline-block;
+        }
+      }
+      .clearCompleted{
+        margin-left: 50px;
+      }
+    }
+  }
+  footer{
+    font-family: arial;
+    font-weight: lighter;
+    font-size: .8em;
+    color: #bbbbbb;
+    text-align: center;
+  }
+}
