@@ -18,7 +18,7 @@
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="../bower_components/modernizr/modernizr.js"></script>
+    // <script src="../bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
   </head>
   <body>
@@ -26,36 +26,30 @@
     <h1>todos</h1>
 
     <div class="container">
-
-      <div class="taskPrompt">
-        <form name="taskPrompt">
+      <a><img src="images/downArrowIcon.png" class="downArrow" alt=""></a>
+        <form class="homeTodo hide" action="">
+          <input type="text" class="taskEnter" placeholder="What needs to be done?" required>
           <input type="submit" value="Add">
-          <input type="text" class="taskEnter" name="taskEnter" placeholder="What needs to be done?">
         </form>
+
+
+
+      <div class="allTask">
+
       </div>
 
-
-      <div class="allTasks">
-        <section name="allTasks">
-
-          <!-- <li>list content</li>
-          <li>list content</li> -->
-        </section>
-        </div>
-
-        <ul class="taskStatus">
-
+      <div class="taskStatus">
+        <ul>
           <li class="itemsLeft">item(s) left</li>
-
           <li>
             <ul class="taskNav">
-              <li>All</li>
-              <li>Active</li>
-              <li>Completed</li>
+              <a class="all" href=""><li>All</li></a>
+              <a class="active" href=""><li>Active</li></a>
+              <a class="completed"><li>Completed</li></a>
             </ul>
           </li>
 
-          <li class="clearCompleted">Clear completed</li>
+          <a href=""><li class="clearCompleted">Clear completed</li></a>
 
         </ul>
 
@@ -72,6 +66,7 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/templates.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
